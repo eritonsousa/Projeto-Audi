@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-principal: 'Inter', sans-serif;
+    --cor-fundo: #000;
+    --cor-botao: #707070;
+    --branco-principal: #ffffff;
+    --cor-aviso:#aaa5a5; 
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--font-principal);
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.principal{
+    background-image: url(img/rs7-fundo-escuro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.container__titulo{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 2em 0;
+}
+
+.container__botao{
+    display: block;
+    background-color: var(--cor-botao);
+    padding: 1em;
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__botao:hover{
+    animation: piscando_hover 1s infinite;
+}
+
+@keyframes piscando_hover {
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+        color: var(--branco-principal);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.container__aviso{
+    color: var(--cor-aviso);
+}
+
+.container__caixa{
+    margin: 0 2em 0 4em;
+}
+
+.sencudario__imagem{
+    width: 90%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--cor-aviso);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+/* -------------------LISTAS----------------------- */
+
+.cores__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.cores__lista li{
+    margin: 0 4em;
+}
+
+.cores{
+    text-align: center;
+}
+
+.lista__imagem{
+    width: 250px;
+}
+
+.cores__titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+/* -------------------RODAPÉ----------------------- */
+
+.audi__logo{
+    width: 120px;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape__texto{
+    margin: 1em 0;
+    color: var(--cor-aviso);
+    font-size: 14px;
+}
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+
+
